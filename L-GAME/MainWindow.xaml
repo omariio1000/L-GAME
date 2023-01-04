@@ -5,8 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:L_GAME"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        WindowStartupLocation="CenterScreen"
+        SizeToContent="WidthAndHeight"
+        Title="L-GAME">
+    <Grid Width="600" Height="500">
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="50,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="150,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="250,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="350,50,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
 
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="50,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="150,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="250,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="350,150,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="50,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="150,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="250,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="350,250,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="50,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="150,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="250,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="350,350,0,0" Stroke="Black" VerticalAlignment="Top" Width="100"/>
+ 
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="250,50,0,0" Fill="Red" VerticalAlignment="Top" Width="100" Name="Red0"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="150,50,0,0" Fill="Red" VerticalAlignment="Top" Width="100" Name="Red1"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="150,150,0,0" Fill="Red" VerticalAlignment="Top" Width="100" Name="Red2"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="150,250,0,0" Fill="Red" VerticalAlignment="Top" Width="100" Name="Red3"/>
+
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="250,150,0,0" Fill="DeepSkyBlue" VerticalAlignment="Top" Width="100" Name="Blue0"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="250,250,0,0" Fill="DeepSkyBlue" VerticalAlignment="Top" Width="100" Name="Blue1"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="250,350,0,0" Fill="DeepSkyBlue" VerticalAlignment="Top" Width="100" Name="Blue2"/>
+        <Rectangle HorizontalAlignment="Left" Height="100" Margin="150,350,0,0" Fill="DeepSkyBlue" VerticalAlignment="Top" Width="100" Name="Blue3"/>
+        
+        <Ellipse HorizontalAlignment="Left" Height="80" Margin="60,60,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" Name="Circle0"/>
+        <Ellipse HorizontalAlignment="Left" Height="80" Margin="360,360,0,0" Stroke="Black" VerticalAlignment="Top" Width="80" Name="Circle1"/>
+
+        <Button HorizontalAlignment="Left" VerticalAlignment ="Top" Height="35" Width="110" Margin="470, 60, 0 0 " Content="Rotate" Name="Rotate"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment ="Top" Height="35" Width="110" Margin="470, 105, 0 0 " Content="Reflect" Name="Reflect"/>
+        
+        <Button HorizontalAlignment="Left" VerticalAlignment ="Top" Height="35" Width="50" Margin="470, 160, 0 0 " Content="Up" Name="Up"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment ="Top" Height="35" Width="50" Margin="530, 160, 0 0 " Content="Down" Name="Down"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment ="Top" Height="35" Width="50" Margin="470, 205, 0 0 " Content="Left" Name="Left"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment ="Top" Height="35" Width="50" Margin="530, 205, 0 0 " Content="Right" Name="Right"/>
+        
+        <Button HorizontalAlignment="Left" VerticalAlignment ="Top" Height="35" Width="110" Margin="470, 260, 0 0 " Content="Skip Moving" IsEnabled="False" Name="SkipMove"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment ="Top" Height="35" Width="110" Margin="470, 305, 0 0 " Content="Give Up" Name="GiveUp"/>
+
+        <TextBlock HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="470, 360, 0 0 " Text="RED" FontSize="24" TextAlignment="Center" Foreground="Red" Name="TurnLabel"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Height="35" Width="110" Margin="470, 405, 0 0 " Content="Play Again"  IsEnabled="False" Name="PlayAgain"/>
     </Grid>
+
 </Window>
